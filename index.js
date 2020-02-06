@@ -27,7 +27,7 @@ function currentLine(line){
   var string;
   var line_names;
   var name;
-  var line_lenght;
+  var line_length = line.length;
   if(line_length < 1){
     return "The line is currently empty."
   }
