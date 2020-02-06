@@ -21,6 +21,8 @@ function nowServing(katzDeliLine){
   }
 }
 
+console.log(nowServing(['roy','ilka']))
+
 function currentLine(line){
   var string;
   var line_names;
