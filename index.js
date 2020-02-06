@@ -17,11 +17,11 @@ function nowServing(katzDeliLine){
     name = katzDeliLine.shift();
     line = katzDeliLine;
     line;
-    return name;
+    return `Currently serving ${name}.`;
   }
 }
 
-console.log(nowServing(['roy','ilka']))
+
 
 function currentLine(line){
   var string;
