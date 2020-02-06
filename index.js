@@ -31,10 +31,11 @@ function currentLine(line){
   }
   else{
   string = `The line is currently: 1. ${line[0]}`;
-  for(let i = 1; i < line.length; i++){
+  for(let i = 1; i < line_length; i++){
     name = line[i];
     line_names = string + `, ${i+1}. ${name}`;
     string = line_names
     }
     return string
   }
+}
