@@ -15,7 +15,8 @@ function nowServing(katzDeliLine){
   }
   else {
     name = katzDeliLine.shift();
-    katzDeliLine.shift()
+    line = katzDeliLine;
+    line;
     return name;
   }
 }
