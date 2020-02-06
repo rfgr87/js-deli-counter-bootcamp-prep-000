@@ -21,10 +21,18 @@ function currentLine(line){
   var string;
   var line_names;
   var name;
-  for(let i = 0; i < line.length; i++){
-    name = line[i];
-    line_names + ", " + line_names;
-    line_names = `${i+1}. ${name}`;
+  var line_lenght
+  if(line_length < 1){
+    return "The line is currently empty."
   }
-   string = "The line is currently: "
-}
+  else if(line_length === 1){
+    string = `The line is currently: ${line_length}. ${line[0]}`;
+    return string
+  }
+  else{
+  for(let i = 1; i < line.length; i++){
+    name = line[i];
+    line_names = string + `, ${i+1}. ${name}`;
+    string = line_names
+    }
+  }
