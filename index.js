@@ -1,6 +1,8 @@
 function takeANumber(line,name){
   var number = line.length + 1
   var string;
+  var line_names = line;
+  line_names.push(name);
   string = `Welcome, ${name}. You are number ${number} in line.`
   return string
 }
